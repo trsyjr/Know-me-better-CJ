@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Know Me Better</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-white overflow-y-scroll">
+
+<section class="h-screen relative flex flex-col items-center justify-center">
+  <div class="text-center px-4 z-10">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[5rem] font-bold mb-6">Hi!</h1>
+    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] font-semibold">
+      I'm <span id="typed-name"></span>
+    </h2>
+  </div>
+
+  <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 mix-blend-screen invert">
+    <img src="Assets/arrow.gif" alt="Arrow"
+         class="w-[12rem] sm:w-[14rem] md:w-[16rem] h-auto">
+  </div>
+</section>
+
+<section class="min-h-screen flex items-center justify-center bg-[#030D1E] px-6 py-20">
+  <div class="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Left carousel -->
+    <div class="flex justify-center">
+      <div class="swiper w-full max-w-md rounded-lg shadow-lg">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex items-center justify-center">
+            <img src="Assets/student1.jpg" alt="Student 1" class="w-full max-w-md h-[30rem] rounded-lg">
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <img src="Assets/student2.jpg" alt="Student 2" class="w-full max-w-md h-[30rem] rounded-lg">
+          </div>
+          <!-- <div class="swiper-slide flex items-center justify-center">
+            <img src="Assets/student3.jpg" alt="Student 3" class="w-[40rem] max-w-md h-[30rem] rounded-lg">
+          </div> -->
+          <div class="swiper-slide flex items-center justify-center">
+            <img src="Assets/student4.jpg" alt="Student 4"
+              class="w-[40rem] max-w-lg sm:max-w-xl md:max-w-2xl object-contain rounded-lg">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
+    </div>
+    
+    <!-- Right text -->
+    <div class="text-center md:text-left space-y-6">
+      <h3 class="text-3xl sm:text-4xl font-bold mb-4">
+        Who I am as a student.
+      </h3>
+      <p class="text-base sm:text-lg md:text-xl leading-relaxed">
+        I was a student who struggled with consistency. In elementary I was more drawn to art than academics and often won awards in drawing, posters, and slogans. In high school, I lost confidence in art and became unmotivated in academics, skipping classes for computer games and almost getting expelled.
+      </p>
+      <p class="text-base sm:text-lg md:text-xl leading-relaxed">
+        Everything changed when my grandmother urged me to take school seriously. I shifted my focus, worked hard on my ICT studies, and slowly improved. In college, I discovered my strength in programming, led my thesis group, and dedicated myself to learning and teaching my peers. I never aimed for awards, only to graduate and make my parents proud, but through perseverance and discipline, I unexpectedly finished as Cum Laude.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="min-h-screen flex items-center justify-center px-6 py-20">
+  <div class="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <!-- Left text with glass effect -->
+    <div class="flex justify-center">
+      <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-8 md:p-12 shadow-lg max-w-2xl w-full">
+        <h3 class="text-4xl sm:text-5xl font-bold underline-offset-4 mb-6">
+          My first job shaped my growth.
+        </h3>
+        <p class="text-lg sm:text-xl leading-relaxed text-gray-100 mb-4">
+          My very first job was as a Tech Support, where I handled troubleshooting and fixing hardware and software issues. The company was in the food industry and not very focused on technology, so I proposed some automation, developed a website, and soon got promoted to Web Developer. Just two months later, I was promoted again to IT Business Analyst.
+        </p>
+        <p class="text-lg sm:text-xl leading-relaxed text-gray-100">
+          I became the go-to person for automation and solutions that made my coworkers’ tasks easier. Beyond the work, I also built strong friendships, which made the experience memorable. After a year, I had to part ways because a new opportunity came along.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right carousel -->
+    <div class="flex justify-center">
+      <div class="swiper w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Assets/job1.jpg" alt="Job 1" class="w-full h-[28rem] object-cover">
+          </div>
+          <div class="swiper-slide">
+            <img src="Assets/job2.jpg" alt="Job 2" class="w-full h-[28rem] object-cover">
+          </div>
+          <div class="swiper-slide">
+            <img src="Assets/job3.jpg" alt="Job 3" class="w-full h-[28rem] object-cover">
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="min-h-screen flex flex-col items-center justify-center bg-[#030D1E] px-4 py-20">
+  <div class="max-w-3xl text-center space-y-6">
+    <h3 class="text-3xl sm:text-4xl font-bold mb-4">
+      My Favorite Games
+    </h3>
+    <p class="text-base sm:text-lg md:text-xl leading-relaxed">
+      My favorite board game is Chess, which I’ve enjoyed since childhood and continue to play today. When it comes to video games, I prefer strategy-based ones, and my top choice is Dota 2.
+    </p>
+  </div>
+</section>
+
+
+<section class="min-h-screen flex items-center justify-center px-6 py-20">
+  <div class="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <!-- Left carousel -->
+    <div class="flex justify-center">
+      <div class="swiper w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Assets/hobby1.jpg" alt="Hobby 1" class="w-full h-[28rem] object-cover">
+          </div>
+          <div class="swiper-slide">
+            <img src="Assets/hobby2.jpg" alt="Hobby 2" class="w-full h-[28rem] object-cover">
+          </div>
+          <div class="swiper-slide">
+            <img src="Assets/hobby3.gif" alt="Hobby 3" class="w-full h-[28rem] object-cover">
+          </div>
+          <div class="swiper-slide">
+            <img src="Assets/hobby4.jpg" alt="Hobby 4" class="w-full h-[28rem] object-cover">
+          </div>
+        </div>
+
+        <!-- Pagination + navigation -->
+        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
+    </div>
+
+    <!-- Right text -->
+    <div class="flex justify-center">
+  <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-8 md:p-12 shadow-lg max-w-lg w-full">
+    <h3 class="text-4xl sm:text-5xl font-bold underline-offset-4 mb-6">
+      My Hobbies
+    </h3>
+    <p class="text-lg sm:text-xl leading-relaxed text-gray-100 mb-4">
+      My favorite hobby on weekends is freelancing, where I do photo editing in Photoshop or video editing in Adobe Premiere. Sometimes I also take on small programming projects, which started as a hobby but occasionally earn me extra income.
+    </p>
+    <p class="text-lg sm:text-xl leading-relaxed text-gray-100">
+      Beyond that, what I enjoy the most is riding my motorcycle and spending time in nature.
+    </p>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
+<section class="min-h-screen flex flex-col items-center justify-center bg-[#030D1E] px-4 py-20">
+  <form id="feedback-form" class="max-w-3xl w-full text-center space-y-6">
+    <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold underline">
+      Send Me Feedback
+    </h3>
+    <p class="text-base sm:text-lg md:text-xl text-gray-300">
+      I’d love to hear your thoughts! Please write your feedback below.
+    </p>
+    <textarea 
+      name="feedback_message"
+      placeholder="Write your feedback here..." 
+      class="w-full sm:w-3/4 md:w-2/3 p-5 rounded-xl border border-gray-600 bg-[#0A1428] text-white focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+      rows="6"
+      required></textarea>
+    <div class="flex justify-center">
+      <button 
+        type="submit"
+        class="mt-4 px-16 py-5 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg rounded-full shadow-lg transition duration-300">
+        Send
+      </button>
+    </div>
+  </form>
+</section>
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
