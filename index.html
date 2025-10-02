@@ -9,28 +9,39 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body class="text-white overflow-y-scroll">
 
+<!-- HERO -->
 <section class="h-screen relative flex flex-col items-center justify-center">
-  <div class="text-center px-4 z-10">
+  <!-- Text Content -->
+  <div class="text-center px-4 z-10" data-aos="fade-up">
     <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[5rem] font-bold mb-6">Hi!</h1>
     <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] font-semibold">
       I'm <span id="typed-name"></span>
     </h2>
   </div>
 
-  <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 mix-blend-screen invert">
-    <img src="Assets/arrow.gif" alt="Arrow"
-         class="w-[12rem] sm:w-[14rem] md:w-[16rem] h-auto">
-  </div>
+  <!-- Centered Down Arrow -->
+  <div class="flex justify-center items-center animate-bounce mt-20"
+     data-aos="fade-up"
+     data-aos-delay="300"
+     data-aos-once="true"
+     data-aos-anchor-placement="bottom-bottom">
+  <i class='bx bxs-down-arrow text-white text-6xl'></i>
+</div>
 </section>
 
+<!-- STUDENT SECTION -->
 <section class="min-h-screen flex items-center justify-center bg-[#030D1E] px-6 py-20">
   <div class="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-    
+
     <!-- Left carousel -->
-    <div class="flex justify-center">
+    <div class="flex justify-center" data-aos="fade-left">
       <div class="swiper w-full max-w-md rounded-lg shadow-lg">
         <div class="swiper-wrapper">
           <div class="swiper-slide flex items-center justify-center">
@@ -39,25 +50,17 @@
           <div class="swiper-slide flex items-center justify-center">
             <img src="Assets/student2.jpg" alt="Student 2" class="w-full max-w-md h-[30rem] rounded-lg">
           </div>
-          <!-- <div class="swiper-slide flex items-center justify-center">
-            <img src="Assets/student3.jpg" alt="Student 3" class="w-[40rem] max-w-md h-[30rem] rounded-lg">
-          </div> -->
           <div class="swiper-slide flex items-center justify-center">
-            <img src="Assets/student4.jpg" alt="Student 4"
-              class="w-[40rem] max-w-lg sm:max-w-xl md:max-w-2xl object-contain rounded-lg">
+            <img src="Assets/student4.jpg" alt="Student 4" class="w-[40rem] max-w-lg sm:max-w-xl md:max-w-2xl object-contain rounded-lg">
           </div>
         </div>
         <div class="swiper-pagination"></div>
-        <!-- <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> -->
       </div>
     </div>
-    
+
     <!-- Right text -->
-    <div class="text-center md:text-left space-y-6">
-      <h3 class="text-3xl sm:text-4xl font-bold mb-4">
-        Who I am as a student.
-      </h3>
+    <div class="text-center md:text-left space-y-6" data-aos="fade-right">
+      <h3 class="text-3xl sm:text-4xl font-bold mb-4">Who I am as a student.</h3>
       <p class="text-base sm:text-lg md:text-xl leading-relaxed">
         I was a student who struggled with consistency. In elementary I was more drawn to art than academics and often won awards in drawing, posters, and slogans. In high school, I lost confidence in art and became unmotivated in academics, skipping classes for computer games and almost getting expelled.
       </p>
@@ -69,27 +72,30 @@
   </div>
 </section>
 
-
+<!-- JOB SECTION -->
 <section class="min-h-screen flex items-center justify-center px-6 py-20">
   <div class="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
     <!-- Left text with glass effect -->
-    <div class="flex justify-center">
+    <div class="flex justify-center" data-aos="zoom-in">
       <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-8 md:p-12 shadow-lg max-w-2xl w-full">
         <h3 class="text-4xl sm:text-5xl font-bold underline-offset-4 mb-6">
           My first job shaped my growth.
         </h3>
         <p class="text-lg sm:text-xl leading-relaxed text-gray-100 mb-4">
-          My very first job was as a Tech Support, where I handled troubleshooting and fixing hardware and software issues. The company was in the food industry and not very focused on technology, so I proposed some automation, developed a website, and soon got promoted to Web Developer. Just two months later, I was promoted again to IT Business Analyst.
+          My very first job was as a Tech Support, where I handled troubleshooting and fixing hardware and software issues. The company was in the food industry and not 
+          very focused on technology, so I proposed some automation, developed a website, and soon got promoted to Web Developer. Just two months later, I was promoted 
+          again to IT Business Analyst.
         </p>
         <p class="text-lg sm:text-xl leading-relaxed text-gray-100">
-          I became the go-to person for automation and solutions that made my coworkers’ tasks easier. Beyond the work, I also built strong friendships, which made the experience memorable. After a year, I had to part ways because a new opportunity came along.
+          I became the go-to person for automation and solutions that made my coworkers’ tasks easier. Beyond the work, I also built strong friendships, which made the 
+          experience memorable. After a year, I had to part ways because a new opportunity came along.
         </p>
       </div>
     </div>
 
     <!-- Right carousel -->
-    <div class="flex justify-center">
+    <div class="flex justify-center" data-aos="fade-left">
       <div class="swiper w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -102,50 +108,39 @@
             <img src="Assets/job3.jpg" alt="Job 3" class="w-full h-[28rem] object-cover">
           </div>
         </div>
-
         <div class="swiper-pagination"></div>
-        <!-- <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> -->
       </div>
     </div>
 
   </div>
 </section>
 
-
+<!-- FAVORITE GAMES -->
 <section class="min-h-screen flex flex-col items-center justify-center bg-[#030D1E] px-6 py-20">
-  <!-- Favorite Games Text -->
-  <div class="max-w-3xl text-center space-y-4">
-    <h3 class="text-4xl sm:text-5xl font-extrabold drop-shadow-lg">
-      My Favorite Games
-    </h3>
+  <div class="max-w-3xl text-center space-y-4" data-aos="fade-up">
+    <h3 class="text-4xl sm:text-5xl font-extrabold drop-shadow-lg">My Favorite Games</h3>
     <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-200 drop-shadow-sm">
       My favorite board game is Chess, which I’ve enjoyed since childhood and continue to play today. When it comes to video games, I prefer strategy-based ones, and my top choice is Dota 2.
     </p>
   </div>
 </section>
 
+<!-- BREAK GAME -->
 <section class="min-h-screen flex flex-col items-center justify-center px-6 py-20">
-  <!-- Glass Effect Container -->
-  <div class="w-full max-w-5xl p-8 md:p-12 rounded-2xl shadow-2xl bg-white/10 backdrop-blur-lg flex flex-col items-center space-y-6">
+  <div class="w-full max-w-5xl p-8 md:p-12 rounded-2xl shadow-2xl bg-white/10 backdrop-blur-lg flex flex-col items-center space-y-6" data-aos="fade-up">
 
-    <!-- Game Header & Instructions -->
     <div class="text-center mt-2 space-y-3">
-      <h3 class="text-3xl sm:text-4xl font-bold text-white drop-shadow-md">
-        Let's Take a Break!
-      </h3>
+      <h3 class="text-3xl sm:text-4xl font-bold text-white drop-shadow-md">Let's Take a Break!</h3>
       <p class="text-white text-lg sm:text-xl leading-relaxed max-w-3xl mx-auto drop-shadow-sm text-center">
         Click the <strong class="text-yellow-400">Screen</strong> to make the cube fly! Navigate through the gaps between obstacles. Score points for every successful pass. Try to beat your high score!
       </p>
       <p id="score" class="text-yellow-400 text-xl font-semibold drop-shadow-md">Score: 0</p>
     </div>
 
-    <!-- Game Container -->
     <div id="game-container" class="relative w-full h-[60vh] bg-gradient-to-b from-sky-400 to-blue-600 mt-6 rounded-2xl overflow-hidden border-4 border-white shadow-2xl">
       <div id="cube" class="absolute left-10 bottom-20 w-12 h-12 bg-yellow-400 rounded shadow-lg transition-transform"></div>
     </div>
 
-    <!-- Start Button -->
     <button id="start-btn" class="mt-6 px-8 py-3 bg-yellow-400 text-black font-bold text-lg rounded-full shadow-xl hover:bg-yellow-500 transition-all duration-300">
       Start Game
     </button>
@@ -153,133 +148,97 @@
   </div>
 </section>
 
+<!-- HOBBIES -->
 <section class="min-h-screen flex items-center justify-center px-6 py-20 bg-[#030D1E]">
   <div class="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-    <!-- Left carousel -->
-    <div class="flex justify-center">
+    <div class="flex justify-center" data-aos="fade-left">
       <div class="swiper w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="Assets/hobby1.jpg" alt="Hobby 1" class="w-full h-[28rem] object-cover">
-          </div>
-          <div class="swiper-slide">
-            <img src="Assets/hobby2.jpg" alt="Hobby 2" class="w-full h-[28rem] object-cover">
-          </div>
-          <div class="swiper-slide">
-            <img src="Assets/hobby3.gif" alt="Hobby 3" class="w-full h-[28rem] object-cover">
-          </div>
-          <div class="swiper-slide">
-            <img src="Assets/hobby4.jpg" alt="Hobby 4" class="w-full h-[28rem] object-cover">
-          </div>
+          <div class="swiper-slide"><img src="Assets/hobby1.jpg" alt="Hobby 1" class="w-full h-[28rem] object-cover"></div>
+          <div class="swiper-slide"><img src="Assets/hobby2.jpg" alt="Hobby 2" class="w-full h-[28rem] object-cover"></div>
+          <div class="swiper-slide"><img src="Assets/hobby3.gif" alt="Hobby 3" class="w-full h-[28rem] object-cover"></div>
+          <div class="swiper-slide"><img src="Assets/hobby4.jpg" alt="Hobby 4" class="w-full h-[28rem] object-cover"></div>
         </div>
-
-        <!-- Pagination -->
         <div class="swiper-pagination"></div>
       </div>
     </div>
 
-    <!-- Right text -->
-    <div class="flex justify-center">
+    <div class="flex justify-center" data-aos="fade-right">
       <div class="rounded-2xl p-8 md:p-12 shadow-lg max-w-lg w-full">
-        <h3 class="text-4xl sm:text-5xl font-bold underline-offset-4 mb-6 text-white">
-          My Hobbies
-        </h3>
-        <p class="text-lg sm:text-xl leading-relaxed text-gray-200 mb-4">
-          My favorite hobby on weekends is freelancing, where I do photo editing in Photoshop or video editing in Adobe Premiere. Sometimes I also take on small programming projects, which started as a hobby but occasionally earn me extra income.
-        </p>
-        <p class="text-lg sm:text-xl leading-relaxed text-gray-200">
-          Beyond that, what I enjoy the most is riding my motorcycle and spending time in nature.
-        </p>
+        <h3 class="text-4xl sm:text-5xl font-bold underline-offset-4 mb-6 text-white">My Hobbies</h3>
+        <p class="text-lg sm:text-xl leading-relaxed text-gray-200 mb-4">My favorite hobby on weekends is freelancing, where I do photo editing in Photoshop or video editing in 
+          Adobe Premiere. Sometimes I also take on small programming projects, which started as a hobby but occasionally earn me extra income.</p>
+        <p class="text-lg sm:text-xl leading-relaxed text-gray-200">Beyond that, what I enjoy the most is riding my motorcycle and spending time in nature.</p>
       </div>
     </div>
 
   </div>
 </section>
 
-<section class="min-h-screen flex items-center justify-center px-6 py-20">
-  <!-- Single Glass Container -->
+<!-- MUSIC SECTION -->
+<section class="min-h-screen flex items-center justify-center px-6 py-20" data-aos="fade-up">
   <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 md:p-12 shadow-lg max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
-    <!-- Left text -->
     <div class="text-left space-y-6">
-      <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white">
-        What genre I listened to?
-      </h3>
-      <p class="text-base sm:text-lg md:text-xl leading-relaxed text-gray-200">
-        I listen to a wide variety of genres, pretty much everything except Metal Rock. For me, it feels more like noise than music, and I find it hard to reflect on the lyrics since it can sound a bit creepy. I actually love music and listen to it every day, even before going to sleep. I don’t have a single favorite song because what I play really depends on my mood. Most of the time though, I end up listening to what we call “Jejemon music.”
-      </p>
+      <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white">What genre I listened to?</h3>
+      <p class="text-base sm:text-lg md:text-xl leading-relaxed text-gray-200">I listen to a wide variety of genres, pretty much everything except Metal Rock. For me, 
+        it feels more like noise than music, and I find it hard to reflect on the lyrics since it can sound a bit creepy. I actually love music and listen to it every day, 
+        even before going to sleep. I don’t have a single favorite song because what I play really depends on my mood. Most of the time though, I end up listening to what we 
+        call “Jejemon music.”</p>
     </div>
-    
-    <!-- Right music player -->
-    <div class="flex flex-col items-center space-y-8">
-      <!-- Disc gif or icon -->
-      <img 
-        src="Assets/disc.png" 
-        alt="Music Disc" 
-        class="w-48 h-48 sm:w-72 sm:h-72 lg:w-[28rem] lg:h-[28rem] object-contain animate-spin-slow drop-shadow-[0_0_25px_rgba(59,130,246,0.6)]"
-      >
 
-      <!-- Audio Element -->
+    <div class="flex flex-col items-center space-y-8">
+      <img src="Assets/disc.png" alt="Music Disc" class="w-48 h-48 sm:w-72 sm:h-72 lg:w-[28rem] lg:h-[28rem] object-contain animate-spin-slow drop-shadow-[0_0_25px_rgba(59,130,246,0.6)]">
       <audio controls class="w-full rounded-lg overflow-hidden accent-blue-500">
-        <source src="Assets/candy.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
+        <source src="Assets/candy.mp3" type="audio/mpeg">Your browser does not support the audio element.
       </audio>
     </div>
-
   </div>
 </section>
 
-<section class="min-h-screen flex flex-col items-center justify-center px-4 py-20 bg-[#030D1E]">
+<!-- LOTTERY SECTION -->
+<section class="min-h-screen flex flex-col items-center justify-center bg-[#030D1E] px-4 py-20" data-aos="fade-up">
   <div class="max-w-3xl w-full rounded-2xl shadow-xl p-[5rem] text-center space-y-6">
-    <h3 class="text-3xl sm:text-4xl font-bold mb-4 text-white">
-      If I won the lottery tomorrow, the first thing I would do is
-    </h3>
-    <p class="text-base sm:text-lg md:text-xl leading-relaxed text-gray-200">
-      I would do is invest in a business like Jollibee or 7/11—that’s always been my go-to plan if I ever won the lottery. This way, I’d have a steady source of income and never go broke, while letting the money grow on its own. I’d also invest in cryptocurrency, particularly Ethereum or Bitcoin, since they can serve as a kind of digital bank. With the right knowledge of the market and its trends, they can really help grow your money safely.
-    </p>
+    <h3 class="text-3xl sm:text-4xl font-bold mb-4 text-white">If I won the lottery tomorrow, the first thing I would do is</h3>
+    <p class="text-base sm:text-lg md:text-xl leading-relaxed text-gray-200">I would do is invest in a business like Jollibee or 7/11—that’s always been my go-to plan if I ever 
+      won the lottery. This way, I’d have a steady source of income and never go broke, while letting the money grow on its own. I’d also invest in cryptocurrency, particularly 
+      Ethereum or Bitcoin, since they can serve as a kind of digital bank. With the right knowledge of the market and its trends, 
+      they can really help grow your money safely..</p>
   </div>
 </section>
 
-<section class="min-h-screen flex flex-col items-center justify-center px-6 py-20">
+<!-- ABOUT ME SECTION -->
+<section class="min-h-screen flex flex-col items-center justify-center px-6 py-20" data-aos="fade-up">
   <div class="w-full max-w-5xl bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-16 text-center space-y-6">
-    <h3 class="text-3xl sm:text-4xl font-bold mb-4 text-white">
-      What you really don't know about me
-    </h3>
-    <p class="text-base sm:text-lg md:text-xl leading-relaxed text-gray-200 text-justify">
-      I’ve never been the quiet type. In fact, I was so talkative in elementary school that I was even awarded “Most Talkative.” I’m also a very straightforward person. So if you’re wondering why I sometimes seem quiet, here’s the truth: I get shy, and I take time to observe who I can get along with. Since being straightforward can sometimes upset people, I hold back until I know I can be myself around them.
-      I also describe myself as having a “squammy personality” (like from the informal settlement vibe). Some people distance themselves because of that but honestly, I don’t give a “F-recious” care. I’m actually easy to get along with, as long as you’re willing to meet me halfway.
-      A couple of fun facts: I don’t really like sweets (though I’ll eat them occasionally). I’m allergic to fur, so no cats or dogs for me but if I could, I’d love to have a crow as a pet. That way, it could “legally” steal money and bring it back to me.
-    </p>
+    <h3 class="text-3xl sm:text-4xl font-bold mb-4 text-white">What you really don't know about me</h3>
+    <p class="text-base sm:text-lg md:text-xl leading-relaxed text-gray-200 text-justify">I’ve never been the quiet type. In fact, I was so talkative in elementary school that I 
+      was even awarded “Most Talkative.” I’m also a very straightforward person. So if you’re wondering why I sometimes seem quiet, here’s the truth: I get shy, and I take time 
+      to observe who I can get along with. Since being straightforward can sometimes upset people, I hold back until I know I can be myself around them. I also describe myself as 
+      having a “squammy personality” (like from the informal settlement vibe). Some people distance themselves because of that but honestly, I don’t give a “F-recious” care. I’m 
+      actually easy to get along with, as long as you’re willing to meet me halfway. A couple of fun facts: I don’t really like sweets (though I’ll eat them occasionally). I’m 
+      allergic to fur, so no cats or dogs for me but if I could, I’d love to have a crow as a pet. That way, it could “legally” steal money and bring it back to me.</p>
   </div>
 </section>
 
-<section class="min-h-screen flex flex-col items-center justify-center bg-[#030D1E] px-4 py-20">
+<!-- FEEDBACK SECTION -->
+<section class="min-h-screen flex flex-col items-center justify-center bg-[#030D1E] px-4 py-20" data-aos="fade-up">
   <form id="feedback-form" class="max-w-3xl w-full text-center space-y-6 rounded-xl p-12 shadow-2xl">
-    <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold underline text-white">
-      Send Me Feedback
-    </h3>
-    <p class="text-base sm:text-lg md:text-xl text-gray-200">
-      I’d love to hear your thoughts! Please write your feedback below.
-    </p>
-    <textarea 
-      name="feedback_message"
-      placeholder="Write your feedback here..." 
-      class="w-full sm:w-3/4 md:w-2/3 p-5 rounded-xl border border-gray-600 bg-[#0A1428] text-white focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
-      rows="6"
-      required></textarea>
+    <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold underline text-white">Send Me Feedback</h3>
+    <p class="text-base sm:text-lg md:text-xl text-gray-200">I’d love to hear your thoughts! Please write your feedback below.</p>
+    <textarea name="feedback_message" placeholder="Write your feedback here..." class="w-full sm:w-3/4 md:w-2/3 p-5 rounded-xl border border-gray-600 bg-[#0A1428] text-white focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none" rows="6" required></textarea>
     <div class="flex justify-center">
-      <button 
-        type="submit"
-        class="mt-4 px-16 py-5 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg rounded-full shadow-lg transition duration-300">
-        Send
-      </button>
+      <button type="submit" class="mt-4 px-16 py-5 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg rounded-full shadow-lg transition duration-300">Send</button>
     </div>
   </form>
 </section>
 
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="main.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+
+<script>
+  AOS.init({ duration: 1200, once: true, offset: 100 });
+</script>
+
 </body>
 </html>
