@@ -14,3 +14,23 @@ html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none; /* hides scroll bar in Chrome/Safari/Edge */
 }
+
+.animate-spin-slow {
+    animation: spin 6s linear infinite;
+  }
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+#cube {
+  transition: bottom 0.1s;
+  z-index: 10;
+}
+
+.obstacle {
+  position: absolute;
+  width: 50px;
+  background-color: green;
+  z-index: 5;
+}
